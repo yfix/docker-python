@@ -1,0 +1,11 @@
+version: '2'
+services:
+  python:
+#    image: yfix/python
+    build: .
+    container_name: yfix_test_python
+    restart: always
+    command: ["python", "test/countdown.py"]
+#    volumes:
+#      - ./docker/etc/supervisor/conf.d/:/etc/supervisor/conf.d/
+#      - ./docker/var/log/supervisor:/var/log/supervisor

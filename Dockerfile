@@ -10,6 +10,7 @@ RUN apk add --no-cache \
 RUN mkdir -p /app
 
 COPY docker /
+COPY . /app
 
 WORKDIR /app
 
