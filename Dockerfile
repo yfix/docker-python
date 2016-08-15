@@ -11,10 +11,6 @@ RUN mkdir -p /app
 
 COPY docker /
 
-# ONBUILD COPY requirements.txt /app/
-# ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# ONBUILD COPY . /app
-
 WORKDIR /app
 
 # CMD ["supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
